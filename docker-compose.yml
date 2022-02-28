@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+    php:
+        build:
+            context: .
+            dockerfile: .docker/php/Dockerfile
+        volumes:
+            - ${PROJECT_PATH}:/var/www/app
